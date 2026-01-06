@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Maritime Fleet Tracking System – Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the backend implementation of the **Maritime Fleet Tracking System**.  
+The backend is built using **Node.js, Express.js, and MongoDB** and provides RESTful APIs for vessel tracking, alerts, historical data, and analytics.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Project Overview
 
-### `npm start`
+The Maritime Fleet Tracking System is designed to monitor vessels in real time, store historical movement data, generate alerts, and provide analytical insights.  
+This backend serves as the core API layer for the frontend dashboard.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features Implemented
 
-### `npm test`
+- User Authentication (JWT based)
+- Role-Based Access Control (Admin / User)
+- Live Vessel Tracking APIs
+- Historical Vessel Tracking
+- Alerts & Notifications
+- Analytics-ready APIs
+- Secure REST API architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Runtime:** Node.js  
+- **Framework:** Express.js  
+- **Database:** MongoDB  
+- **Authentication:** JSON Web Tokens (JWT)  
+- **API Testing:** Postman  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Project Structure
+backend/ │── config/ │── controllers/ │── middleware/ │── models/ │── routes/ │── server.js │── package.json │── package-lock.json │── .gitignore │── README.md
+---
 
-### `npm run eject`
+## ⚙️ Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1️⃣ Clone the Repository
+git clone https://github.com/KavyasriSadineni811/maritime-fleet-system-backend.git cd maritime-fleet-system-backend
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2️⃣ Install Dependencies
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3️⃣ Configure Environment Variables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create a `.env` file in the root directory and add the following:
+PORT=5000 MONGO_URI=your_mongodb_connection_string JWT_SECRET=your_secret_key
+---
 
-## Learn More
+## ▶️ Run the Backend Server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Development Mode
+### Production Mode
+Server will run at:
+http://localhost:5000
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔗 API Endpoints (Sample)
 
-### Code Splitting
+| Method | Endpoint | Description |
+|------|---------|-------------|
+| POST | /api/auth/register | Register new user |
+| POST | /api/auth/login | User login |
+| GET | /api/vessels | Fetch all vessels |
+| GET | /api/vessels/:id/history | Vessel historical tracking |
+| POST | /api/alerts | Create alert |
+| GET | /api/analytics | Analytics data |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🧪 API Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+All APIs were tested using **Postman**.  
+A Postman collection is included for easy testing and demonstration.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 Deployment
 
-### Advanced Configuration
+The backend can be deployed using:
+- Render
+- Railway
+- AWS / Azure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Deployment link will be added after hosting.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📸 Submission Artifacts
 
-### `npm run build` fails to minify
+- GitHub Repository ✔️  
+- Postman API Collection ✔️  
+- Screenshots of APIs ✔️  
+- Demo Video (2–5 minutes) ✔️  
+- Deployment Link (if hosted) ✔️  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 👩‍💻 Author
+
+**Kavyasri Sadineni**    
+Maritime Fleet Tracking System

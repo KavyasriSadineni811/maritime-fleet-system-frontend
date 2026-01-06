@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Smooth vessel movement on Leaflet map */
+.leaflet-marker-icon {
+  transition: transform 5s linear;
+}
