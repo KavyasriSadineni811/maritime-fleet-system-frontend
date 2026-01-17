@@ -10,7 +10,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://maritime-fleet-system-backend-4.onrender.com", {
+      const res = await axios.post("/api/auth/Login", {
         email,
         password,
       });
