@@ -10,7 +10,7 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("/api/auth/Register", {
+      const res = await axios.post("https://maritime-fleet-system-backend-4.onrender.com/api/auth/Register", {
   email,
   password,
   role: "user"
